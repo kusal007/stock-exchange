@@ -17,7 +17,7 @@ import src.DB;
 
 /**
  *
- * @author Nalaranga
+ * @author Nishada
  */
 @WebServlet(name = "get_price", urlPatterns = {"/get_price"})
 public class get_price extends HttpServlet {

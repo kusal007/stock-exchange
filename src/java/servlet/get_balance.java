@@ -20,7 +20,7 @@ import src.DB;
 
 /**
  *
- * @author Nalaranga
+ * @author Nishada
  */
 @WebServlet(name = "get_balance", urlPatterns = {"/get_balance"})
 public class get_balance extends HttpServlet {

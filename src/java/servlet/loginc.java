@@ -18,7 +18,7 @@ import src.DB;
 
 /**
  *
- * @author Nalaranga
+ * @author Nishada
  */
 @WebServlet(name = "loginc", urlPatterns = {"/loginc"})
 public class loginc extends HttpServlet {
