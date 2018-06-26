@@ -38,6 +38,10 @@ public class loginc extends HttpServlet {
                     s.setAttribute("us", username);
                     s.setAttribute("pw", password);
                     s.setAttribute("typ", rs.getString(3));
+                    s.setAttribute("acc", rs.getString(5));
+
+                    DB.Execute("UPDATE users SET sid='" + s.getId() + "' WHERE username='" + username + "'");
+
                     response.sendRedirect("/PROJECT_STOCK/home.jsp");
                 } else {
                     response.sendRedirect("/PROJECT_STOCK/index.jsp");
